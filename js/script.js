@@ -5,17 +5,23 @@
     // DOM取得
     // =========================
     const menuToggle = document.getElementById('js__menu__toggle');
-    const nav = document.getElementById('nav');
-    const topBtn = document.getElementById('top__btn');
+    const overlayMenu = document.getElementById('js__menu__overlay');
+    const topBtn = document.getElementById('top-btn');
     const body = document.body;
 
     // =========================
-    // ハンバーガーメニューのクリックイベント
+    // メニュー開閉
     // =========================
-    menuToggle.addEventListener('click', () => {
-        // bodyにクラスをつけ外ししてCSSで制御
+    const toggleMenu = () => {
         body.classList.toggle('menu-open');
-    });
+    };
+
+    // =========================
+    // メニューを閉じる
+    // =========================
+    const closeMenu = () => {
+        body.classList.remove('menu-open');
+    };
 
     // =========================
     // TOPボタン表示制御
@@ -42,9 +48,20 @@
     // イベント登録
     // =========================
     const bindEvents = () => {
+
+        // ハンバーガー開閉
         menuToggle.addEventListener('click', toggleMenu);
+
+        // スクロール
         window.addEventListener('scroll', handleScroll);
+
+        // TOPへ戻る
         topBtn.addEventListener('click', scrollToTop);
+
+        // メニュー内リンククリック時
+        overlayMenu.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
     };
 
     bindEvents();
