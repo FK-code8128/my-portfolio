@@ -456,7 +456,7 @@ h3 {
 
 /* <!-- works__detail__content --> */
 .works__detail__content {
-    background-color: #ece1e1;
+    background-color: #ffffff;
     border-radius: 20px;
     padding: 10px;
     margin-bottom: 50px;
@@ -486,6 +486,10 @@ h3 {
 
 .works__detail__content__point {
     margin-bottom: 30px;
+}
+
+#points {
+    background-color: #f8bbd0;
 }
 
 
