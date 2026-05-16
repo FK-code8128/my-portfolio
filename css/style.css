@@ -535,6 +535,12 @@ h3 {
 }
 
 
+/* <!-- works__detail__back --> */
+.works__detail__back {
+    margin-top: 30px;
+}
+
+
 /* <!-- Contact --> */
 #contact {
     margin-bottom: 30px;
