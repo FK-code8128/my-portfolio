@@ -534,6 +534,10 @@ h3 {
     margin: 0;
 }
 
+.works__gallery__card span {
+    display: inline-block;
+}
+
 
 /* <!-- works__detail__back --> */
 .works__detail__back {
