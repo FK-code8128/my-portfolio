@@ -227,6 +227,11 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 
 
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
 
 
