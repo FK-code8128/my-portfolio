@@ -431,15 +431,49 @@ h3 {
     margin: 0 auto 12px;
 }
 
-.highlight ul {
+.highlight__list {
     margin: 0 auto 1rem;
     padding-left: 20px;
+    width: fit-content;
 }
 
 .highlight__list li {
     margin-bottom: 10px;
-    width: fit-content;
 }
+
+/* =========================
+   Tablet (768px〜)
+========================= */
+@media (min-width: 768px) {
+    .highlight {
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+
+    .highlight__list {
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+/* =========================
+   PC (1024px〜)
+========================= */
+@media (min-width: 1024px) {
+    .highlight {
+        max-width: 900px;
+    }
+
+    .highlight__title {
+        font-size: 2rem;
+    }
+
+    .highlight__list li {
+        font-size: 1.5rem;
+    }
+}
+
+
 
 
 
