@@ -29,10 +29,50 @@ body {
 /* =========================
    Layout
 ========================= */
+/*   main */
+main {
+    width: 100%;
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@media (min-width: 768px) {
+    main {
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 2560px) {
+    main {
+        width: 100%;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+}
+
 .container {
     max-width: var(--max-width);
-    padding: 0 10px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .container ul {
@@ -226,14 +266,8 @@ body.menu-open .header__toggle span:nth-child(3) {
 
 
 
-/* =========================
-   main
-========================= */
-main {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-}
+
+
 
 
 
@@ -277,7 +311,7 @@ main {
 
 .section__title {
     text-align: center;
-    font-size: 24px;
+    font-size: 1rem;
     margin: 20px 0 30px;
     color: #4e4e4e;
 }
