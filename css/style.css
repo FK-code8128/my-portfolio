@@ -423,22 +423,36 @@ body.menu-open .header__toggle span:nth-child(3) {
     visibility: hidden;
 }
 
-/* =========================
-   Tablet (768px〜)
-========================= */
 @media (min-width: 768px) {
     .works__grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .top-button {
+        font-size: 2rem;
+    }
 }
 
-/* =========================
-   PC (1024px〜)
-========================= */
 @media (min-width: 1024px) {
 
     .works__grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .top-button {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .top-button {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .top-button {
+        font-size: 4rem;
     }
 }
 
@@ -755,16 +769,16 @@ h3 {
 
 /* <!-- Contact --> */
 #contact {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
+}
+
+#contact .section__title {
+    margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
     .works__detail__back a {
         font-size: 1.2rem;
-    }
-
-    #contact .section__title {
-        margin-bottom: 0;
     }
 
     #contact a {
